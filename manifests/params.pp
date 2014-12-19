@@ -4,7 +4,7 @@ class nagios::params {
   $owner = 'nagios'
   case $::osfamily {
     'Redhat' : {
-      $package_name = 'tw-nagios'
+      $package_name = 'nrpe-nagios'
     }
     default : {
       fail( "Your ${::osfamily} is not supported yet")
